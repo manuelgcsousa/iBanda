@@ -18,7 +18,7 @@ There are 3 main functional processes:
   
   Allows the distribution of all the stored objects. It can be made available as a ZIP file, or it can generate a static website that allows the navigation through the information.
 
-There are a couple of rules when it comes to uploading files. To understand more about that, read ["docs/enunciado-pri2018.pdf"](https://github.com/MGCSousa/iBanda/blob/master/docs/enunciado-pri2018.pdf)
+There are a couple of rules when it comes to uploading files. To understand more about that, read ["docs/enunciado-pri2018.pdf"](https://github.com/MGCSousa/iBanda/blob/master/doc/enunciado-pri2018.pdf)
 
 ## Installation
 
@@ -47,8 +47,6 @@ There are a couple of rules when it comes to uploading files. To understand more
       ```
 
 3. Access "localhost" to view login page
-
-&nbsp;
 
 &nbsp;
 
