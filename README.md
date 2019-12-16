@@ -56,7 +56,7 @@ There are a couple of rules when it comes to uploading files. To understand more
 
 - [Eduardo Gil Rocha](https://github.com/egrocha)
 
-- [Lázaro Vinícuis](https://github.com/lazavini)
+- [Lázaro Vinícius](https://github.com/lazavini)
 
 &nbsp;
 
