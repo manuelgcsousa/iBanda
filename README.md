@@ -56,6 +56,8 @@ There are a couple of rules when it comes to uploading files. To understand more
 
 - [Eduardo Gil Rocha](https://github.com/egrocha)
 
+- [Lázaro Vinícuis](https://github.com/lazavini)
+
 &nbsp;
 
 *University Project - Processamento e Representação de Informação, Universidade do Minho (2018-2019)*
