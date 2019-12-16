@@ -28,10 +28,10 @@ There are a couple of rules when it comes to uploading files. To understand more
 
 2. Start Server (Node.js)
    
-   1. Navigate to "src/iBanda"
+   1. Navigate to ["src/iBanda/"](https://github.com/MGCSousa/iBanda/tree/master/src/iBanda)
       
       ```bash
-      cd src/iBanda
+      cd src/iBanda/
       ```
    
    2. Install all components
