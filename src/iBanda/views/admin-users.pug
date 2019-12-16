@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-black
+                h3 Lista de Utilizadores
+            .w3-container
+                p
+                each u in users
+                    b Username: 
+                    i= u.username
+                    p
+                    b Password: 
+                    i= u.password
+                    p
+                    form.w3-container(method='POST' action='/admin/removeUser')
+                        input.w3-btn.w3-grey(type='submit' value='Remover Utilizador')
+                    br
+                    .w3-container.w3-light-grey
+                        h5 Editar Username 
+                        form.w3-container(method='POST' action='/admin/editUser')
+                            input(type='hidden' id='username' name='username' value=u.username)
+                            input.w3-input(type='text' name='new_username' placeholder='Email' id='new_username')
+                            p
+                            input.w3-btn.w3-grey(type='submit' value='Editar Username' id="editUser")
+                            p
+                    br
+                    .w3-container.w3-light-grey
+                        h5 Editar Password
+                        form.w3-container(method='POST' action='/admin/editPass')
+                            input(type='hidden' id='username' name='username' value=u.username)
+                            input.w3-input(type='text' name='new_password' placeholder='Password' id='new_password')
+                            p
+                            input.w3-btn.w3-grey(type='submit' value='Editar Password' id="editPass")
+                            p
+                    p
+                    hr.hrThick          
+        footer.w3-container.w3-black
+            a(href="/admin") Voltar à página principal

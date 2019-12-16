@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:iBanda-SIP.dtd">
+<manifesto>
+    <meta>
+        <titulo>Homenagem ao Dr Manuel Vaz</titulo>
+        <tipo>Marcha de Desfile</tipo>
+        <compositor>Alexandre da Fonseca</compositor>
+    </meta>
+    <instrumentos>
+        <inst>
+            <nome>Sax Barítono</nome>
+            <partitura>HomenagemMVaz-saxB.jpg</partitura>
+        </inst>
+        <inst>
+            <nome>Maestro</nome>
+            <partitura>HomenagemMVaz-maestro.pdf</partitura>
+        </inst>
+        <inst>
+            <nome>Bombo</nome>
+            <partitura>HomenagemMVaz-bombo.pdf</partitura>
+        </inst>
+        <inst>
+            <nome>Trombone</nome>
+            <partitura>HomenagemMVaz-trombone2-fa-do_marcha.pdf</partitura>
+            <voz>II</voz>
+            <clave>Fá</clave>
+            <afinacao>Dó</afinacao>
+        </inst>
+        <inst>
+            <nome>Trombone</nome>
+            <partitura>HomenagemMVaz-trombone2-sol-do_marcha.pdf</partitura>
+            <voz>II</voz>
+            <clave>Sol</clave>
+            <afinacao>Dó</afinacao>
+        </inst>
+    </instrumentos>
+</manifesto>

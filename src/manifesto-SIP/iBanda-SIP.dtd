@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT manifesto (meta, instrumentos) >
+
+<!ELEMENT meta (titulo, tipo, compositor, arranjo?) >
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT tipo (#PCDATA) >
+<!ELEMENT compositor (#PCDATA) >
+<!ELEMENT arranjo (#PCDATA) >
+
+<!ELEMENT instrumentos (inst+) >
+<!ELEMENT inst (nome, partitura, voz?, clave?, afinacao?) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT partitura (#PCDATA) >
+<!ELEMENT voz (#PCDATA) >
+<!ELEMENT clave (#PCDATA) >
+<!ELEMENT afinacao (#PCDATA) >

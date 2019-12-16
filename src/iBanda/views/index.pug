@@ -1,0 +1,48 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-blue-grey
+                h3 iBanda - Arquivo de Música Digital
+            .w3-container
+                ul
+                    if notLogged
+                        li
+                            a(href="http://localhost:2727/registo") Registo
+                        li
+                            a(href="http://localhost:2727/login") Login
+                    else
+                        li
+                            a(href="http://localhost:2727/logout") Logout
+                    li
+                        a(href="http://localhost:2727/consumer/obras") Lista de Obras
+                    li
+                        a(href="http://localhost:2727/ingest" id="upload_obra") Upload de Obra
+                    li
+                        a(href="http://localhost:2727/about") About
+                    if admin
+                        li
+                            a(href="http://localhost:2727/admin") Menu Administrador
+    br
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-blue-grey
+                h3 Notícias
+            .w3-container
+                p
+                each n in noticias
+                    if n.disponibilidade
+                        b Título: 
+                        i= n.titulo
+                        p
+                        b Subtítulo: 
+                        i= n.subtitulo
+                        p
+                        b Data: 
+                        i= n.data
+                        p
+                        b Descrição: 
+                        i= n.descricao
+                        p
+                        hr.hrThick

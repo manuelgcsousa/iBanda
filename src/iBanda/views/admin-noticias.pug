@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-black
+                h3 Nova Notícia:
+            .w3-container
+                p
+                form.w3-container(method='POST' action='/admin/addNoticia')
+                    input.w3-input(type='text' name='titulo' placeholder='Título:')
+                    input.w3-input(type='text' name='subtitulo' placeholder='Subtítulo:')
+                    input.w3-input(type='text' name='data' placeholder='Data: AAAA-MM-DD')
+                    input.w3-input(type='text' name='descricao' placeholder='Descrição:')
+                    br
+                    input.w3-btn.w3-grey(type='submit' value='Criar')
+                    p
+        br
+        .w3-card-4
+            header.w3-container.w3-black
+                h3 Lista de Notícias
+            .w3-container
+                p
+                each n in noticias
+                    b Título: 
+                    i= n.titulo
+                    p
+                    b Subtítulo: 
+                    i= n.subtitulo
+                    p
+                    b Data: 
+                    i= n.data
+                    p
+                    b Descrição: 
+                    i= n.descricao
+                    p
+                    b Estado: 
+                    i= n.disponibilidade
+                    p
+                    form(method='POST' action='/admin/makeIndisponivel')
+                        input(type='hidden' id='titulo' name='titulo' value=n.titulo)
+                        input(type='hidden' id='disponibilidade' name='disponibilidade' value=n.disponibilidade)
+                        input.w3-btn.w3-grey(type='submit' value='Alterar Estado')
+                    p
+                    form(method='POST' action='/admin/removeNoticia')
+                        input(type='hidden' id='titulo' name='titulo' value=n.titulo)
+                        input.w3-btn.w3-grey(type='submit' value='Remover')
+                    hr.hrThick
+        footer.w3-container.w3-black
+            a(href="/admin") Voltar à página principal

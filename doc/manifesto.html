@@ -1,0 +1,154 @@
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script>
+                    $(document).ready(function() {
+                        $("#flip1").click(function() {
+                            $("#panel1").slideToggle("slow");
+                        });
+                    });
+                    $(document).ready(function() {
+                        $("#flip2").click(function() {
+                            $("#panel2").slideToggle("slow");
+                        });
+                    });
+                    $(document).ready(function() {
+                        $("#flip3").click(function() {
+                            $("#panel3").slideToggle("slow");
+                        });
+                    });
+                </script><style>
+                    * {
+                        font-family: Lucida Grande;
+                    }
+                    table, tr {
+                        border: 5px solid #4CAF50;
+                        font-size: 15px;
+                        background-color: #f2f2f2
+                    }
+                    #flip1 {
+                        padding: 10px;
+                        text-align: center;
+                        background-color: #f2f2f2;
+                        border: solid 4px #4CAF50;
+                    }
+                    #panel1 {
+                        padding: 10px;
+                        text-align: left;
+                        background-color: #FFFFFF;
+                        border: solid 4px #4CAF50;
+                    }
+                    #panel1 {
+                        padding: 50px;
+                        display: none;
+                    }
+                    #flip2 {
+                        padding: 10px;
+                        text-align: center;
+                        background-color: #f2f2f2;
+                        border: solid 4px #4CAF50;
+                    }
+                    #panel2 {
+                        padding: 10px;
+                        text-align: left;
+                        background-color: #FFFFFF;
+                        border: solid 4px #4CAF50;
+                    }
+                    #panel2 {
+                        padding: 50px;
+                        display: none;
+                    }
+                    #flip3 {
+                        padding: 10px;
+                        text-align: center;
+                        background-color: #f2f2f2;
+                        border: solid 4px #4CAF50;
+                    }
+                    #panel3 {
+                        padding: 10px;
+                        text-align: left;
+                        background-color: #FFFFFF;
+                        border: solid 4px #4CAF50;
+                    }
+                    #panel3 {
+                        padding: 50px;
+                        display: none;
+                    }
+                </style></head>
+   <body>
+      <h1 align="center">Manifesto</h1>
+
+      <table width="100%">
+         <tr>
+            <td width="50%"><b>ID: </b>PRI2018::TPFinal
+            </td>
+            <td width="50%"><b>DATA DE INÍCIO: </b>30 de Dezembro de 2019
+            </td>
+         </tr>
+         <tr>
+            <td width="50%"><b>TÍTULO: </b>Trabalho Prático Final
+            </td>
+            <td width="50%"><b>DATA DE FIM: </b> 31 de Janeiro de 2019
+            </td>
+         </tr>
+         <tr>
+            <td width="50%"><b>SUBTÍTULO: </b>Trabalho prático de PRI/GCS do perfil de PLC 2018/2019
+            </td>
+            <td width="50%"><b>SUPERVISOR: </b><a href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a></td>
+         </tr>
+      </table><br><hr>
+
+      <div id="flip1"><b>EQUIPA</b></div>
+      <div id="panel1">
+         <ol>
+            <li>Eduardo Gil Ribeiro da Rocha -
+                <b>A77048</b> -
+                <a href="mailto:a77048@alunos.uminho.pt">a77048@alunos.uminho.pt</a></li>
+            <li>Lázaro Vinícius Oliveira Lima -
+                <b>ID8120</b> -
+                <a href="mailto:id8120@alunos.uminho.pt">id8120@alunos.uminho.pt</a></li>
+            <li>Manuel Gouveia Carneiro de Sousa -
+               <b>A78869</b> -
+               <a href="mailto:a78869@alunos.uminho.pt">a78869@alunos.uminho.pt</a></li>
+
+         </ol><br><hr>
+      </div><br>
+
+      <div id="flip2"><b>RESUMO</b></div>
+      <div id="panel2">
+
+        <p>
+            Este trabalho prático tem como objetivo o desenvolvimento de uma aplicação Web que gerencia um repositório digital de obras musicais e respetivas partituras.
+            O repositório foi construído respeitando o modelo de referência internacional <b><i>OAIS</i></b> - <i>(Open Archive Information System)</i>.
+        </p>
+        <p>
+            A aplicação proposta pretende proporcionar a uma banda filarmónica (ou utilizador independente) a visualização e navegação de obras e respetivas partituras.
+        </p>
+        <p>
+            As tecnologias utilizadas para o desenvolvimento da aplicação são <b><i>Node.js</i></b>, desenvolvido para aplicações escaláveis e para armazenamento <b><i>MongoDB</i></b>, que funciona como base de dados com escalabilidade e flexibilidade.
+        </p>
+        <p>
+            Para a execução do programa, é necessário descarregar a pasta principal - <i>iBanda</i>. 
+            Depois disso, numa consola, escrever o comando "<b><i>npm install</i></b>" para instalar todos os componentes da aplicação. 
+            Logo após a instalação, será necessária ligação da base de dados mongo através do comando "<b><i>mongod</i></b>". 
+            Posto isto, na pasta da aplicação, executar o comando <b><i>"npm start"</i></b> para começar a aplicação. 
+            Abrindo o browser, e conectando em <i>http://localhost:2727/</i>, temos acesso à página principal da aplicação.
+        </p>
+        <hr>
+      </div><br>
+
+      <div id="flip3"><b>RESULTADOS</b></div>
+      <div id="panel3">
+         <ul>
+
+            <li><a href="https://github.com/MGCSousa/iBanda-PRI2018-Final">Repositório contendo o ZIP dos diversos ficheiros do TPFinal</a></li>
+         </ul>
+         <hr>
+      </div>
+      <hr>
+      <p align="center">01/02/2019</p>
+      <p align="center">Universidade do Minho</p>
+
+   </body>
+</html>

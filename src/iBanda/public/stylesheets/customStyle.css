@@ -1,0 +1,56 @@
+.hrThick { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+
+/* Com o intuito de alinhar um bloco no centro da página. */
+.center {
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+  }
+  
+  /* Botão customizado que dá shift devido a hover com pointer do rato. */
+  .button {
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 20px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  

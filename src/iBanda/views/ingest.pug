@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-blue-grey
+                h3 iBanda - Arquivo de Música Digital
+        .center
+            .w3-container.w3-blue-grey.w3-card-4
+                h2 Upload de Obras
+                p Faça o upload do pacote contendo a obra tendo em atenção a sua estrutura.
+            form.w3-panel.w3-card-4(action="/ingest/processaForm", method="POST", enctype="multipart/form-data")
+                p
+                    b= "Ficheiro"
+                input.w3-input.w3-border.w3-light-grey(type="file", name="ficheiro")
+                br
+                button(type="submit" class="button w3-blue-grey")
+                    span Enviar
+                p
+    footer.w3-container.w3-blue-grey
+        a(href="/") Voltar à página principal

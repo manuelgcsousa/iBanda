@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-black
+                h1= marcha.titulo
+                h2= marcha.tipo
+                p
+                    b= "Compositor: " + marcha.compositor
+                h4 Partituras Disponíveis
+                .w3-container
+                    table.w3-table.w3-all(border="1")
+                        tr
+                            th Instrumento
+                            th Partitura
+                            th Voz
+                            th Clave
+                            th Afinação
+                        each inst in marcha.instrumentos
+                            tr
+                                td= inst.nome
+                                td
+                                    a(href="http://localhost:2727/admin/obras/" + marcha._id + "/inst/" + inst.nome + "/pdf/" + inst.partitura)= inst.partitura
+                                td= inst.voz
+                                td= inst.clave
+                                td= inst.afinacao
+                p
+                form.w3-container(method='POST' action='/admin/removeObra')
+                    input(type='hidden' id='id_obra' name='id_obra' value=marcha._id)
+                    input.w3-btn.w3-black(type='submit' value='Remover Obra' id="removeObra")
+                    p
+            footer.w3-container.w3-black
+                p
+                    a(href="http://localhost:2727/admin/obras")
+                        | Voltar à página principal

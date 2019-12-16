@@ -1,0 +1,35 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="manifesto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="meta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="titulo" maxOccurs="1"/>
+              <xs:element type="xs:string" name="tipo" maxOccurs="1"/>
+			  <xs:element type="xs:string" name="compositor" maxOccurs="1"/>
+			  <xs:element type="xs:string" name="arranjo" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="instrumentos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inst" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="nome"/>
+                    <xs:element type="xs:string" name="partitura"/>
+                    <xs:element type="xs:string" name="voz" minOccurs="0"/>
+                    <xs:element type="xs:string" name="clave" minOccurs="0"/>
+                    <xs:element type="xs:string" name="afinacao" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

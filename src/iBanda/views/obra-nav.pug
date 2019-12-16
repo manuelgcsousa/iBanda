@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h1= marcha.titulo
+                h2= marcha.tipo
+                p
+                    b= "Compositor: " + marcha.compositor
+                h4 Partituras Disponíveis
+                .w3-container
+                    table.w3-table.w3-all(border="1")
+                        tr
+                            th Instrumento
+                            th Partitura
+                            th Voz
+                            th Clave
+                            th Afinação
+                        each inst in marcha.instrumentos
+                            tr
+                                td= inst.nome
+                                td
+                                    a(href="http://localhost:2727/consumer/obras/nav/" + marcha._id + "/inst/" + inst.nome + "/pdf/" + inst.partitura)= inst.partitura
+                                td= inst.voz
+                                td= inst.clave
+                                td= inst.afinacao
+            footer.w3-container.w3-light-grey
+                p
+                    a(href="http://localhost:2727/consumer/obras")
+                        | Voltar à página principal
